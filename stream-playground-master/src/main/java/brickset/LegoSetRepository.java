@@ -77,19 +77,12 @@ public class LegoSetRepository extends Repository<LegoSet> {
     public static void main(String[] args) {
 
         var repository1 = new LegoSetRepository();
+        
         System.out.println(repository1.countLegoSetsWithTheme("Games"));
-
-        var repository2 = new LegoSetRepository();
-        System.out.println(repository2.countLegoSetsWithPiecesOver450(450));
-
-        var repository3 = new LegoSetRepository();
-        repository3.printLegoSetsNameinAlphabeticalOrder();
-
-        var repository4 = new LegoSetRepository();
-        repository4.printFirst5LegoSetsName();
-
-        var repository5 = new LegoSetRepository();
-        System.out.println(repository5.printAverageLegoSetsPieces());
+        System.out.println(repository1.countLegoSetsWithPiecesOver450(450));
+        repository1.printLegoSetsNameinAlphabeticalOrder();
+        repository1.printFirst5LegoSetsName();
+        System.out.println(repository1.printAverageLegoSetsPieces());
 
     }
 
